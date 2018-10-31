@@ -1,6 +1,7 @@
 export { default as AlphaPicker } from './components/alpha/Alpha'
 export { default as BlockPicker } from './components/block/Block'
 export { default as CirclePicker } from './components/circle/Circle'
+export { default as CircleWithTitlePicker } from './components/circle/CircleWithTitle'
 export default, { default as ChromePicker } from './components/chrome/Chrome'
 export { default as CompactPicker } from './components/compact/Compact'
 export { default as GithubPicker } from './components/github/Github'
