@@ -3,7 +3,7 @@ import reactCSS, { handleHover } from 'reactcss'
 
 import { Swatch } from '../common'
 
-export const GithubSwatch = ({ hover, color, onClick, onSwatchHover }) => {
+export const GithubSwatch = ({ hover, color, onClick, onSwatchHover, title }) => {
   const hoverSwatch = {
     position: 'relative',
     zIndex: '2',
@@ -31,6 +31,7 @@ export const GithubSwatch = ({ hover, color, onClick, onSwatchHover }) => {
         onClick={ onClick }
         onHover={ onSwatchHover }
         focusStyle={ hoverSwatch }
+        title={ title }
       />
     </div>
   )
