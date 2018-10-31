@@ -4,7 +4,7 @@ import map from 'lodash/map'
 
 import { Swatch } from '../common'
 
-export const BlockSwatches = ({ colors, onClick, onSwatchHover, title }) => {
+export const BlockSwatches = ({ colors, onClick, onSwatchHover }) => {
   const styles = reactCSS({
     'default': {
       swatches: {
@@ -36,7 +36,6 @@ export const BlockSwatches = ({ colors, onClick, onSwatchHover, title }) => {
           focusStyle={{
             boxShadow: `0 0 4px ${ c }`,
           }}
-          title={title}
         />
       )) }
       <div style={ styles.clear } />

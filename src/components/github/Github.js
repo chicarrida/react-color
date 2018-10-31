@@ -7,7 +7,7 @@ import { ColorWrap } from '../common'
 import GithubSwatch from './GithubSwatch'
 
 export const Github = ({ width, colors, onChange, onSwatchHover, triangle,
-  className = '', title }) => {
+  className = '' }) => {
   const styles = reactCSS({
     'default': {
       card: {
@@ -104,7 +104,6 @@ export const Github = ({ width, colors, onChange, onSwatchHover, triangle,
           key={ c }
           onClick={ handleChange }
           onSwatchHover={ onSwatchHover }
-          title={ title }
         />
       )) }
     </div>
@@ -115,7 +114,6 @@ Github.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   colors: PropTypes.arrayOf(PropTypes.string),
   triangle: PropTypes.oneOf(['hide', 'top-left', 'top-right', 'bottom-left', 'bottom-right']),
-  title: PropTypes.string
 }
 
 Github.defaultProps = {

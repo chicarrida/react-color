@@ -7,7 +7,7 @@ import color from '../../helpers/color'
 import { ColorWrap, EditableInput, Swatch } from '../common'
 
 export const Twitter = ({ onChange, onSwatchHover, hex, colors, width, triangle,
-  className = '', title }) => {
+  className = '' }) => {
   const styles = reactCSS({
     'default': {
       card: {
@@ -135,7 +135,6 @@ export const Twitter = ({ onChange, onSwatchHover, hex, colors, width, triangle,
               focusStyle={{
                 boxShadow: `0 0 4px ${ c }`,
               }}
-              title={ title }
             />
           )
         }) }
@@ -155,7 +154,6 @@ Twitter.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   triangle: PropTypes.oneOf(['hide', 'top-left', 'top-right']),
   colors: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string,
 }
 
 Twitter.defaultProps = {
