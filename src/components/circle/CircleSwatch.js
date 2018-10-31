@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import reactCSS, { handleHover } from 'reactcss'
 
 import { Swatch } from '../common'

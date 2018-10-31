@@ -8,7 +8,7 @@ import { ColorWrap } from '../common'
 import CircleSwatch from './CircleSwatch'
 
 export const Circle = ({ width, onChange, onSwatchHover, colors, hex, circleSize,
-  circleSpacing, className = '' }) => {
+  circleSpacing, className = '' , title}) => {
   const styles = reactCSS({
     'default': {
       card: {
@@ -34,6 +34,7 @@ export const Circle = ({ width, onChange, onSwatchHover, colors, hex, circleSize
           active={ hex === c.toLowerCase() }
           circleSize={ circleSize }
           circleSpacing={ circleSpacing }
+          title={title}
         />
       )) }
     </div>
@@ -44,6 +45,7 @@ Circle.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   circleSize: PropTypes.number,
   circleSpacing: PropTypes.number,
+  title: PropTypes.string
 }
 
 Circle.defaultProps = {
